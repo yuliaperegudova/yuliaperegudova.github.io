@@ -1,0 +1,26 @@
+<svg id="_" data-name="+" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="143" viewBox="0 0 143 143">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 48px;
+        fill: #1b1b1b;
+        font-family: "Proxima Nova";
+        font-weight: 700;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="143" height="143" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="13" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5.916"/>
+      <feFlood result="flood" flood-color="#171717" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Прямоугольник_скругл._углы_3" data-name="Прямоугольник, скругл. углы 3" class="cls-1" x="34" y="21" width="74" height="74" rx="37" ry="37"/>
+  <text id="_2" data-name="+" class="cls-2" x="59.166" y="72.569">+</text>
+</svg>

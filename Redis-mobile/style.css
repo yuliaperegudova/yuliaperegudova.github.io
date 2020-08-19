@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "Proxima Nova Black";
+    src: url("fonts/ProximaNova-Black.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("fonts/ProximaNova-Regular.woff2") format("woff2");
+    /* font-weight: 400; */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("fonts/ProximaNova-Bold.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova Regular", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-family: "Proxima Nova Black";
+  font-size: 26px;
+  color: black;
+
+}
+
+.button {
+  background-color: black;
+  border: none;
+  border-radius: 37px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  color: white;
+  width: 200px;
+  height: 46px;
+  font-size: 14px;
+  font-family: "Proxima Nova Bold";
+  padding: 10px;
+  margin: 20px 20px 20px 0px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #df0c70;
+}
+/* .outer-wrapper {
+  border: 2px solid red;
+}
+
+.wrapper {
+  border: 2px solid blue;
+} */
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+
+}
+
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__logo {
+  width: 60px;
+  margin: 5px 0px 0px 10px;
+}
+
+.main-nav__toggle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.main-nav__list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 9, 58);
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.main-nav__list li {
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.slide-two {
+  background-image: url("img/group13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-two h2 {
+  display: block;
+  font-size: 36px;
+  color: #ed1a7e;
+  margin-top: 130px;
+}
+
+.slide-two p {
+  display: block;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.slide-three {
+  background-image: url("img/group3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  color: white;
+}
+
+.slide-three h2 {
+  display: block;
+  margin-top: 30px;
+  color: white;
+}
+
+.image-container {
+  width: 320px;
+  height: 400px;
+  background-image: url("img/redis4.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.slide-five span{
+  border: 2px solid #9bcfb3;
+  border-radius: 37px;
+  padding: 5px;
+  color: #9bcfb3;
+  font-size: 12px;
+}
+
+.slide-five .premium {
+  border:2px solid #df0c70;
+  color: #df0c70;
+}
+
+.cook-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.cook-list__item {
+  display: inline-block;
+  width: 110px;
+  background-color: #e9e9e9;
+  border-radius: 37px;
+  padding: 5px 20px;
+  margin: 10px 10px 10px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slide-six span {
+  color: #c8c8c8;
+  font-size: 14px;
+}
+
+.slide-seven {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.slide-seven ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-seven span {
+  color: #c8c8c8;
+  font-style: italic;
+}
+
+.slide-seven .list-button {
+  display: inline-block;
+  border: 1px solid #404040;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.slide-eight .products {
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
+
+}
+
+.slide-eight .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  font-size: 14px;
+  width: 300px;
+  height: 600px;
+}
+
+.test {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  background-image: url("img/product-item-02.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px;
+}
+
+.test::before {
+  content: "";
+  font-size: 20px;;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 37px;
+  padding: 10px 20px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.slide-nine .slide-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-image: url("img/plate-03.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 150px;
+}
+
+.slide-nine h2 {
+  display: block;
+  position: absolute;
+  font-size: 36px;
+  color: #ed1a7e;
+  margin: 0;
+  margin-top: 90px;
+}
+
+.slide-ten .slide-container {
+  height: 500px;
+  background-image: url("img/start-prodazh.png");
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: bottom center;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  bottom: 50px;
+  right: 50px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+  margin: 30px 5px;
+}
