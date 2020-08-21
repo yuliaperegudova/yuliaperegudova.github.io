@@ -1,7 +1,8 @@
-const menuOpen = document.querySelector('.main-nav__toggle');
-const menuList = document.querySelector('.main-nav__list-wrapper');
-const menuClosed = document.querySelector('.nav-closed');
-const nextButton = document.querySelector('.button-next');
+var menuOpen = document.querySelector('.main-nav__toggle');
+var menuList = document.querySelector('.main-nav__list-wrapper');
+var menuClosed = document.querySelector('.nav-closed');
+var nextButton = document.querySelector('.button-next');
+var pageCounter = 3;
 
 menuOpen.addEventListener('click', function() {
     menuList.classList.toggle('visually-hidden');
@@ -11,5 +12,18 @@ menuOpen.addEventListener('click', function() {
 menuClosed.addEventListener('click', function() {
     menuList.classList.toggle('visually-hidden');
     menuOpen.classList.remove('visually-hidden');
+});
+
+
+nextButton.addEventListener('click', function() {
+    var newPage = 0;
+    if(pageCounter < 11) { 
+        nextButton.href = "#" + pageCounter;
+        newPage = pageCounter + 1;
+        pageCounter = newPage;
+        console.log(pageCounter)
+    } else {
+        nextButton.href = "#10";
+    }
 });
 
