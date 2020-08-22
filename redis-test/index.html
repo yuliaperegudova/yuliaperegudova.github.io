@@ -12,8 +12,15 @@
             <nav class="main-nav">
               <div class="main-nav__container">
                 <a href="#2" class="main-nav__logo">
+                  <picture>
                     <img src="img/header-logo@2x.png" alt="Редис логотип">
+                  </picture>
                 </a>
+                <a href="#2" class="main-nav__logo main-nav__logo-white visually-hidden">
+                  <picture>
+                  <img src="img/logo-white.png" alt="Редис логотип">
+                </picture>
+              </a>
                 <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 34 34">
@@ -89,14 +96,18 @@
                   <div class="slide-container">
                       <article class="price-standart">
                           <span class="standart">Стандарт</span>
-                          <img src="img/redis-standart.png">
+                          <picture>
+                            <img src="img/redis-standart.png" srcset="img/redis-standart@2x.png 2x">
+                          </picture>
                           <h3>Жара</h3>
                         <p>Корнеплод раннеспелого редиса. Отличиется округлостью<br>формы и массой 30г. По цвету - это красный овощ. Мякоть<br>белая и отличается сочностью. По вкусу не имеет горечи.</p>
                       </article>
                       <article class="price-premium">
                         <span class="premium">Премиум</span>
                         <div>
-                          <img src="img/redis-premium.png">
+                          <picture>
+                            <img src="img/redis-premium.png" srcset="img/redis-premium@2x.png 2x">
+                          </picture>
                         </div>
                         <h3>Французский завтрак</h3>
                         <p>Скороспелый гибрид массой 15-20г. Корнеплод продолговатой<br>формы, малинового цвета снаружи и белого окраса мякоти. По<br>вкусу имеет легкую ноту остроты.</p>
@@ -150,7 +161,7 @@
                         <button class="button">Найти рецепт</button>
                     </div>
                     <picture>
-                      <img src="img/photo-5.jpg">
+                      <img src="img/photo-5.jpg" srcset="img/photo-5@2x.jpg 2x">
                     </picture>
                 </div>
               </section>
@@ -185,8 +196,8 @@
                         </li>
                     </ul>
                 </div>
+
               </section>
-                
               <section id="8" class="slide slide-eight">
                   <div class="slide-container">
                       <div class="text-container">
@@ -253,6 +264,7 @@
           </div>
           </main>
           <footer>
+            <div class="test"></div>
               <a href="#3" class="button-next">Листать   
                 <svg xmlns="http://www.w3.org/2000/svg" width="73.5" height="9" viewBox="0 0 73.5 9">
                     <defs>
