@@ -223,12 +223,23 @@ ul {
     justify-content: space-around;
 }
 
+.slide-two {
+    background-image: url("img/background2-mobile.jpg");
+    background-size: auto 100vh;
+    background-position: top center;
+}
+
+
 .slide-two .black-text {
   font-family: "Proxima Nova Black";
   font-size: 22px;
   line-height: 26px;
   color: #000;
   margin-top: 40px;
+}
+
+.slide-two .text-container {
+    padding-top: 100px;
 }
 
 .slide-three {
@@ -454,6 +465,10 @@ input[type="checkbox"]:checked + span {
     background-image: url("img/start-prodazh.png");
     background-position: top center;
     background-size: 130vw;
+
+    @media (min-resolution: 1.5dppx) {
+        background-image: url("img/start-prodazh@2x.jpg");
+    }
 }
 
 .slide-ten .slide-container {
@@ -488,15 +503,21 @@ input[type="checkbox"]:checked + span {
 /* Tablet version */
 
 
-@media(min-width: 640px) {
+@media(min-width: 760px) {
 
     .slide-container { 
         height: auto;
     }
+
+    h2 {
+        font-size: 50px;
+        padding-top: 30px;
+    }
     
     p {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 34px;
+        margin-top: 30px;
     }
     
     .pink-heading {
@@ -511,14 +532,31 @@ input[type="checkbox"]:checked + span {
         margin-top: 30px;
     }
 
+    .slide-two {
+        background-image: url("img/background2-tablet.jpg");
+        background-size: auto 100vh;
+        background-position: top center;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background2-tablet@2x.jpg");
+        }
+    }
+
     .slide-two .text-container {
-        padding-top: 100px;
+        padding-top: 400px;
     }
 
     .slide-two .black-text {
         font-size: 40px;
         line-height: 45px;
-      }
+    }
+
+    .slide-three .text-container {
+        width: 90vw;
+        height: auto;
+        justify-content: space-around;
+    }
+    
 }
 
 
@@ -615,9 +653,13 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-two {
-        background-image: url("img/background2@2x.jpg");
+        background-image: url("img/background2.jpg");
         background-size: cover;
         background-position: left;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background2@2x.jpg");
+        }
     }
 
     .slide-two .slide-container {
@@ -631,9 +673,13 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-three {
-        background-image: url("img/background3@2x.jpg");
+        background-image: url("img/background3.jpg");
         background-size: cover;
         background-position: left;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background3@2x.jpg");
+        }
     } 
 
     .slide-three .slide-container { 
@@ -761,9 +807,13 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-eight {
-        background-image: url("img/plate@2x.png");
+        background-image: url("img/plate.png");
         background-position: bottom left 700px;
         background-size: 90vh;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/plate@2x.png");
+        }
     }
 
     .slide-eight .product-container {
@@ -792,9 +842,13 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-nine {
-        background-image: url("img/background9@2x.jpg");
+        background-image: url("img/background9.jpg");
         background-size: cover;
         background-position: center;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background9@2x.jpg");
+        }
     }
 
     .slide-nine .slide-container {
@@ -875,11 +929,15 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-four .image-wrapper {
-        background-image: url("img/backgroung4@2x.jpg");
+        background-image: url("img/backgroung4.jpg");
         background-size: contain;
         position: relative;
         height: 100vh;
         width: 810px;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background4@2x.jpg");
+        }
     }
 
     .slide-four .pin {
