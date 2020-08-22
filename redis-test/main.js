@@ -24,7 +24,7 @@ nextButton.addEventListener('click', function() {
         pageCounter = newPage;
         console.log(pageCounter)
     } else {
-        nextButton.href = "#10";
+        var pageCounter = 2;
     }
 
     if(pageCounter === 8) {
