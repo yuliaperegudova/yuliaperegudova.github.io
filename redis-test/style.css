@@ -76,8 +76,10 @@ a {
 h2 {
     display: block;
     font-family: "Proxima Nova Black";
-    color: black;
-    margin: 0;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 30px;
 }
 
 p {
@@ -87,14 +89,6 @@ p {
     line-height: 24px;
     color: #757575;
     margin: 0;
-}
-
-.pink-heading {
-    display: block;
-    font-family: "Proxima Nova Black";
-    color: #ed1a7e;
-    font-size: 50px;
-    line-height: 50px;
 }
 
 ul {
@@ -192,7 +186,7 @@ ul {
     width: 200px;
     height: 46px;
     font-size: 14px;
-    margin-top: 30px;
+    margin: 30px 0px;
 }
 
 .button:hover {
@@ -204,23 +198,21 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-repeat: no-repeat;
 }
 
 .slide-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    /* justify-content: center;  */
     width: 90vw;
-    height: 100vh;
+    margin: 30px 0px;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .slide-two {
@@ -229,6 +221,14 @@ ul {
     background-position: top center;
 }
 
+.pink-heading {
+    display: block;
+    font-family: "Proxima Nova Black";
+    color: #ed1a7e;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 100px;
+}
 
 .slide-two .black-text {
   font-family: "Proxima Nova Black";
@@ -238,18 +238,10 @@ ul {
   margin-top: 40px;
 }
 
-.slide-two .text-container {
-    padding-top: 100px;
-}
-
 .slide-three {
     background-image: url("img/background-3-mobile.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.slide-three .text-container {
-    height: 90vh;
 }
 
 .slide-three h2, 
@@ -258,7 +250,6 @@ ul {
 }
 
 .slide-four .slide-container {
-    height: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -266,13 +257,13 @@ ul {
 .slide-four .image-wrapper {
     position: relative;
     display: flex;
-    width: 100vw;
-    height: 90vh;
+    width: 90vw;
+    height: 60vh;
     background-color: #fff;
     background-image: url("img/redis-pins.jpg");
     background-size: 80vw;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
 }
 
 .slide-four span {
@@ -285,15 +276,13 @@ ul {
 }
 
 .slide-five .slide-container {
-    height: 160vh;
     justify-content: space-around;
-    position: relative;
 }
 
 .slide-five h3 {
     font-family: "Proxima Nova Bold";
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .slide-five span{
@@ -310,34 +299,35 @@ ul {
 .slide-five .premium {
     border:2px solid #df0c70;
     color: #df0c70;
+    margin-top: 60px;
 }
 
-.slide-five .price-standart::before {
+picture {
+    position: relative;
+}
+
+.slide-five .image-standart::before {
     content: url("img/price-standart.png");
     position: absolute;
-    top: 70px;
     transform: scale(0.6);
+    right: 5px;
 }
 
-.slide-five .price-premium::before {
+.slide-five .image-premium::before {
     content: url("img/price-premium.png");
     transform: scale(0.6);
     position: absolute;
-    top: 100vh;
+    right: 5px;
 }
 
 .slide-six .slide-container {
-    height: auto;
     justify-content: space-around;
-}
-
-.slide-six .text-container {
-    height: 80vh;
 }
 
 .slide-six .cook-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .ckeckbox-label {
@@ -363,6 +353,10 @@ input[type="checkbox"]:checked + span {
     color: #fff;
 }
 
+.slide-six img {
+    padding: 20px 0px;
+}
+
 .slide-seven {
     background-color: #1b1b1b;
     color: #fff;
@@ -371,7 +365,6 @@ input[type="checkbox"]:checked + span {
 .slide-seven .slide-container {
     justify-content: space-around;
     position: relative;
-    height: auto;
 }
 
 .slide-seven figcaption {
@@ -403,7 +396,6 @@ input[type="checkbox"]:checked + span {
 }
 
 .slide-eight .slide-container {
-    height: 180vh;
     justify-content: space-around;
 }
 
@@ -415,8 +407,9 @@ input[type="checkbox"]:checked + span {
 .slide-eight .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
+    height: 110vh;
 }
 
 .slide-eight .product-item {
@@ -424,11 +417,10 @@ input[type="checkbox"]:checked + span {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
-    width: 110px;
-    height: 90px;
-    margin: 20px 10px;
+    width: 100px;
+    height: 80px;
+    margin: 20px 20px;
     cursor: pointer;
 }
 
@@ -441,7 +433,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .slide-eight .product-item:hover::before {
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .slide-eight span {
@@ -455,10 +447,15 @@ input[type="checkbox"]:checked + span {
     background-image: url("img/plate-03.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
+    height: 70vh;
+}
+
+.slide-nine .pink-heading {
+    padding-top: 0;
 }
 
 .slide-ten {
@@ -473,7 +470,7 @@ input[type="checkbox"]:checked + span {
 
 .slide-ten .slide-container {
     justify-content: flex-end;
-    padding-bottom: 15px;
+    height: 100vh;
 }
 
 .button-next {
@@ -503,15 +500,11 @@ input[type="checkbox"]:checked + span {
 /* Tablet version */
 
 
-@media(min-width: 760px) {
-
-    .slide-container { 
-        height: auto;
-    }
+@media(min-width: 600px) {
 
     h2 {
         font-size: 50px;
-        padding-top: 30px;
+        line-height: 50px;
     }
     
     p {
@@ -523,18 +516,19 @@ input[type="checkbox"]:checked + span {
     .pink-heading {
         font-size: 90px;
         line-height: 80px;
+        padding-top: 400px;
     }
 
     .button {
         width: 250px;
         height: 50px;
         font-size: 18px;
-        margin-top: 30px;
+        margin: 40px 0px;
     }
 
     .slide-two {
         background-image: url("img/background2-tablet.jpg");
-        background-size: auto 100vh;
+        background-size: 100vw auto;
         background-position: top center;
 
         @media (min-resolution: 1.5dppx) {
@@ -542,28 +536,87 @@ input[type="checkbox"]:checked + span {
         }
     }
 
-    .slide-two .text-container {
-        padding-top: 400px;
-    }
-
     .slide-two .black-text {
         font-size: 40px;
         line-height: 45px;
     }
+    
+    .slide-four .image-wrapper {
+        height: 80vh;
+    }
 
-    .slide-three .text-container {
-        width: 90vw;
-        height: auto;
-        justify-content: space-around;
+    .slide-five h3 {
+        font-size: 28px;
+    }
+
+    .slide-five .image-standart::before {
+        right: 400px;
     }
     
+    .slide-five .image-premium::before {
+        right: 400px;
+    }
+    
+    .ckeckbox-label {
+        font-size: 18px;
+        width: 150px;
+        padding: 10px 15px;
+        margin: 20px 30px 10px 0px;
+    }
+
+    .slide-six img {
+        width: 90vw;
+        padding: 20px 0px;
+    }
+
+    .slide-seven .slide-container {
+        justify-content: space-around;
+    }
+
+    .slide-eight .product-container {
+        height: 40vh;
+    }
+    
+    .slide-eight .product-item {
+        margin: 30px 30px;
+    }
+
+    .slide-nine .slide-container {
+        height: 90vh;
+    }
+
+    .slide-ten {
+        background-size: 100vw;
+    
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/start-prodazh@2x.jpg");
+        }
+    }
+
+    .slide-ten .slide-container {
+        align-items: flex-end;
+    }
+
 }
 
+/* Tablet horizontal version */
 
-/* Desktop version */
 
+@media(min-width: 900px) {
 
-@media(min-width: 1020px) {
+    .slide,
+    .slide-container,
+    h2,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
 
     .outer-wrapper {
         width: 100vh;
@@ -615,21 +668,15 @@ input[type="checkbox"]:checked + span {
         right: 60px;
     }
 
-    h2 {
-        font-size: 50px;
-        line-height: 50px;
-    }
-
     p {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .button {
         width: 250px;
         height: 55px;
         font-size: 18px;
-        margin-top: 30px;
     }
 
     .slide {
@@ -643,13 +690,9 @@ input[type="checkbox"]:checked + span {
         padding: 0px 100px 0px 60px;
     }
 
-    .slide-two .text-container,
-    .slide-three .text-container,
-    .slide-six .text-container,
-    .slide-seven .text-container,
-    .slide-eight .text-container {
+    .text-container {
         height: 60vh;
-        padding-top: 0;
+        padding: 0;
     }
 
     .slide-two {
@@ -664,6 +707,11 @@ input[type="checkbox"]:checked + span {
 
     .slide-two .slide-container {
         justify-content: space-between;
+    }
+
+    .slide-two .pink-heading,
+    .slide-nine .pink-heading {
+        padding-top: 0; 
     }
 
     .slide-two .black-text {
@@ -682,24 +730,16 @@ input[type="checkbox"]:checked + span {
         }
     } 
 
-    .slide-three .slide-container { 
-        justify-content: space-between;
-    }
-
-    .slide-four .slide-container {
-        height: 60vh;
-        justify-content: space-between;
+    .slide-four .slide-container { 
         padding-left: 0;
+        height: 100vh;
     }
 
     .slide-four .image-wrapper {
         height: 100vh;
         width: 50vw;
-        background-size: 35vw;
-    }
-
-    .slide-four .text-container {
-        height: 60vh;
+        background-size: 40vw;
+        background-position: center;
     }
 
     .slide-four .text-container p {
@@ -707,38 +747,45 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-five .slide-container {
-        height: 60vh;
         justify-content: space-between;
-        position: relative;
     }
 
     .slide-five article {
         display: flex;
         height: 60vh;
+        width: 40vw;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
-        padding-left: 80px;
     }
 
-    .slide-five .price-standart::before {
-        top: 30px;
+    .slide-five .image-standart::before {
         transform: scale(0.7);
+        right: 0;
+        top: 0;
     }
 
-    .slide-five .price-premium::before {
-        top: 30px;
+    .slide-five .image-premium::before {
         transform: scale(0.7);
+        right: 0;
+        top: -240px;
+    }
+
+    .slide-five .premium {
+        margin-top: 0px;
     }
 
     .slide-five h3 {
-        font-family: "Proxima Nova Bold";
         font-size: 26px;
         line-height: 34px;
     }
 
+    .slide-five p {
+        font-size: 14px;
+    }
+
     .slide-five img {
-        width: 30vw;
+        width: 40vw;
     }
 
     .slide-six .slide-container {
@@ -746,32 +793,24 @@ input[type="checkbox"]:checked + span {
         justify-content: space-between;
     }
 
-    .slide-six picture {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-
     .slide-six .cook-list {
         width: 450px;
     }
     
     .ckeckbox-label {
-        font-size: 18px;
-        width: 130px;
+        font-size: 16px;
+        width: 120px;
         padding: 10px 15px;
-        margin: 10px 10px 10px 0px;
+        margin: 10px 20px 15px 0px;
     }
 
     .slide-six img {
         box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-        height: 50vh;
-
+        width: 90vw;
+        padding: 0;
     }
 
-    .slide-seven .slide-container {
-        height: 60vh;
-    }
+    /* редактировать */
 
     .slide-seven figcaption {
         font-size: 18px;
@@ -787,15 +826,9 @@ input[type="checkbox"]:checked + span {
     }
 
     .slider {
-        display:flex;
-        flex-direction: row;
         position: absolute;
-        bottom: -50px;
-        right: 200px;
-    }
-    
-    .slider-button {
-        margin: 10px;
+        bottom: 0;
+        right: 130px;
     }
 
     .slide-eight .slide-container {
@@ -803,7 +836,7 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-eight .text-container {
-        width: 600px;
+        width: 60vw;
     }
 
     .slide-eight {
@@ -821,20 +854,21 @@ input[type="checkbox"]:checked + span {
     }
 
     .slide-eight .products {
-        flex-grow: 1; 
+        /* flex-grow: 1;  */
         width: 600px;
     }
     
     .slide-eight .product-item {
-        width: 110px;
-        height: 100px;
-        margin: 0 30px;
+        flex-direction: row;
+        width: 90px;
+        height: 80px;
+        margin: 15px 30px;
     }
 
     .slide-eight .product-item::before {
         transform: scale(0.6);
-        left: 70px;
-        top: 10px;
+        left: -30px;
+        top: -20px;
     }
     
     .slide-eight .product-item:hover::before {
@@ -855,22 +889,29 @@ input[type="checkbox"]:checked + span {
         background-image: none;
         padding-top: 0px;
         padding-left: 70px;
+        height: 60vh;
     }
 
     .slide-ten {
         background-position: top left;
-        background-size: 130vh;
+        background-size: 100vh;
     }
 
     .slide-ten .slide-container {
         align-items: flex-end;
         padding-bottom: 0;
+        height: 60vh;
     }
 
     .slide-ten .text-container {
         background-color: #f6f6f6;
-        margin-right: 100px;
         padding: 10px;
+        width: 35vw;
+        height: 50vh;
+    }
+
+    .slide-ten .button {
+        margin-bottom: 20px;
     }
 
     .button-next {
@@ -894,6 +935,216 @@ input[type="checkbox"]:checked + span {
     }
 }
 
+/* Desktop version */
+
+
+@media(min-width: 1200px) {
+    h2 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .slide-container {
+        padding: 0px 200px 0px 60px;
+    }
+
+    .text-container {
+        justify-content: space-between;
+    }
+
+    .button {
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    .pink-heading {
+        font-size: 90px;
+        line-height: 80px;
+    }
+
+    .slide-two .black-text {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .slide-four .image-wrapper {
+        background-image: url("img/backgroung4.jpg");
+        position: relative;
+        height: 100vh;
+        width: 45vw;
+
+        @media (min-resolution: 1.5dppx) {
+            background-image: url("img/background4@2x.jpg");
+        }
+    }
+
+    .slide-four .pin {
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        font-family: "Proxima Nova Bold";
+    }
+
+    .slide-four .pin-1 {
+        top: 200px;
+        left: 60px;
+    }
+
+    .slide-four .pin-2 {
+        top: 300px;
+        left: 460px;
+    }
+
+    .slide-four .pin-3 {
+        top: 400px;
+        left: 90px;
+    }
+
+    .slide-four .pin-4 {
+        top: 470px;
+        left: 500px;
+    }
+
+    .slide-four .pin-5 {
+        top: 550px;
+        left: 80px;
+    }
+
+    .slide-four .pin-1::after {
+        content: url("img/pin1.png");
+        position: absolute;
+        top: -30px;
+        left: 150px;
+        transform: scale(0.7);
+    }
+
+    .slide-four .pin-2::after {
+        content: url("img/pin2.png");
+        position: absolute;
+        top: -20px;
+        right: 120px;
+        transform: scale(0.7);
+    }
+
+    .slide-four .pin-3::after {
+        content: url("img/pin3.png");
+        position: absolute;
+        top: -30px;
+        left: 135px;
+        transform: scale(0.7);
+    }
+
+    .slide-four .pin-4::after {
+        content: url("img/pin4.png");
+        position: absolute;
+        top: -30px;
+        right: 135px;
+        transform: scale(0.7);
+    }
+
+    .slide-four .pin-5::after {
+        content: url("img/pin5.png");
+        position: absolute;
+        top: -30px;
+        left: 170px;
+        transform: scale(0.7);
+    }
+
+    .slide-four .pin:hover {
+        transform: scale(1.2);
+        color: #df0c70; 
+    }
+
+    .slide-four .pin:hover::after {
+        transform: scale(1);
+    }
+
+    .slide-five img {
+        width: 35vw;
+    }
+
+    .slide-five p {
+        font-size: 16px;
+    }
+
+    .slide-six img {
+        margin-left: 40px;
+    }
+
+    .slide-six p {
+        font-size: 16px;
+    }
+
+    .slide-seven .slide-container {
+        padding-left: 100px;
+    }
+
+    .slide-seven .photo3 {
+        margin-top: 170px;
+    }
+
+    .slide-seven .photo4 {
+        margin-top: -45px;
+    }
+
+    .slide-eight .slide-container {
+        padding-right: 100px;
+    }
+
+    .slide-eight .products {
+        width: 1000px;
+    }
+
+    .slide-eight .product-container {
+        height: 60vh;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    .slide-eight .product-item {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 110px;
+        height: 90px;
+        margin: 20px;
+
+    }
+
+    .slide-eight span {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .slide-ten {
+        background-size: 120vh;
+    }
+
+    .slide-ten .slide-container {
+        padding-right: 70px;
+    }
+
+    .slide-ten .text-container {
+        height: 350px;
+        width: 30vw;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .slide-ten .button {
+        margin-bottom: 0px;
+    }
+}
+
+/* Large desktop version */
 
 @media(min-width: 1800px) {
     h2 {
@@ -913,6 +1164,7 @@ input[type="checkbox"]:checked + span {
     .pink-heading {
         font-size: 130px;
         line-height: 110px;
+
     }
 
     .slide-two .black-text {
@@ -1030,6 +1282,30 @@ input[type="checkbox"]:checked + span {
         font-size: 22px;
     }
 
+    .slide-five article {
+        padding-left: 40px;
+    }
+
+    .slide-five img {
+        width: 30vw;
+    }
+
+    .slide-five p {
+        font-size: 22px;
+    }
+
+    .slide-five .image-standart::before {
+        transform: scale(1);
+        right: 0;
+        top: 0;
+    }
+
+    .slide-five .image-premium::before {
+        transform: scale(1);
+        right: 0;
+        top: -320px;
+    }
+
     .ckeckbox-label {
         font-size: 22px;
         width: 180px;
@@ -1049,16 +1325,6 @@ input[type="checkbox"]:checked + span {
         height: 60vh;
     }
 
-    .slide-five .price-standart::before {
-        top: 70px;
-        transform: scale(1);
-    }
-
-    .slide-five .price-premium::before {
-        top: 70px;
-        transform: scale(1);
-    }
-
     .slide-seven .slide-container {
         padding-left: 100px;
     }
@@ -1074,6 +1340,10 @@ input[type="checkbox"]:checked + span {
     .slide-seven figcaption {
         font-size: 22px;
         line-height: 34px;
+    }
+
+    .slide-eight .text-container {
+        width: auto;
     }
 
     .slide-eight .products {
@@ -1100,6 +1370,10 @@ input[type="checkbox"]:checked + span {
         background-size: 130vh;
     }
 
+    .slide-ten .slide-container {
+        padding-right: 200px;
+    }
+
     .slide-ten .text-container {
         height: 450px;
         margin: 0;
@@ -1109,7 +1383,7 @@ input[type="checkbox"]:checked + span {
         width: 352px;
         height: 74px;
         font-size: 22px;
-        margin-top: 50px;
+        margin: 50px 0px 0px 0px;
     }
 
 }
