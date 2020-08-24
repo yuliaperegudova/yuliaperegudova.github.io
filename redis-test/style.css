@@ -306,13 +306,13 @@ picture {
     position: relative;
 }
 
-.slide-five .test-standart,
-.slide-five .test-premium {
+.slide-five .redis-standart,
+.slide-five .redis-premium {
     display: block;
     position: relative;
 }
 
-.slide-five .test-standart::before {
+.slide-five .redis-standart::before {
     content: url("img/price-standart.png");
     position: absolute;
     transform: scale(0.5);
@@ -320,7 +320,7 @@ picture {
     left: -70px;
 }
 
-.slide-five .test-premium::before {
+.slide-five .redis-premium::before {
     content: url("img/price-premium.png");
     transform: scale(0.5);
     position: absolute;
@@ -557,11 +557,11 @@ input[type="checkbox"]:checked + span {
         font-size: 28px;
     }
 
-    .slide-five .test-standart::before {
+    .slide-five .redis-standart::before {
         top: -400px;
     }
     
-    .slide-five .test-premium::before {
+    .slide-five .redis-premium::before {
         top: -400px;
     }
     
@@ -769,11 +769,11 @@ input[type="checkbox"]:checked + span {
         width: 450px;
     }
 
-    .slide-five .test-standart::before {
+    .slide-five .redis-standart::before {
         top: -300px;
     }
     
-    .slide-five .test-premium::before {
+    .slide-five .redis-premium::before {
         top: -300px;
     }
 
@@ -1306,12 +1306,12 @@ input[type="checkbox"]:checked + span {
         font-size: 22px;
     }
 
-    .slide-five .test-standart::before {
+    .slide-five .redis-standart::before {
         transform: scale(1);
         top: -400px;
     }
     
-    .slide-five .test-premium::before {
+    .slide-five .redis-premium::before {
         transform: scale(1);
         top: -400px;
     }
