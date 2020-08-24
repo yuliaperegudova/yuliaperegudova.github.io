@@ -306,18 +306,26 @@ picture {
     position: relative;
 }
 
-.slide-five .image-standart::before {
-    content: url("img/price-standart.png");
-    position: absolute;
-    transform: scale(0.6);
-    right: 5px;
+.slide-five .test-standart,
+.slide-five .test-premium {
+    display: block;
+    position: relative;
 }
 
-.slide-five .image-premium::before {
-    content: url("img/price-premium.png");
-    transform: scale(0.6);
+.slide-five .test-standart::before {
+    content: url("img/price-standart.png");
     position: absolute;
-    right: 5px;
+    transform: scale(0.5);
+    top: -250px;
+    left: -70px;
+}
+
+.slide-five .test-premium::before {
+    content: url("img/price-premium.png");
+    transform: scale(0.5);
+    position: absolute;
+    top: -250px;
+    left: -70px;
 }
 
 .slide-six .slide-container {
@@ -549,12 +557,12 @@ input[type="checkbox"]:checked + span {
         font-size: 28px;
     }
 
-    .slide-five .image-standart::before {
-        right: 400px;
+    .slide-five .test-standart::before {
+        top: -400px;
     }
     
-    .slide-five .image-premium::before {
-        right: 400px;
+    .slide-five .test-premium::before {
+        top: -400px;
     }
     
     .ckeckbox-label {
@@ -761,16 +769,12 @@ input[type="checkbox"]:checked + span {
         width: 450px;
     }
 
-    .slide-five .image-standart::before {
-        transform: scale(0.7);
-        right: 0;
-        top: 0;
+    .slide-five .test-standart::before {
+        top: -300px;
     }
-
-    .slide-five .image-premium::before {
-        transform: scale(0.7);
-        right: 0;
-        top: -240px;
+    
+    .slide-five .test-premium::before {
+        top: -300px;
     }
 
     .slide-five .premium {
@@ -1302,16 +1306,14 @@ input[type="checkbox"]:checked + span {
         font-size: 22px;
     }
 
-    .slide-five .image-standart::before {
+    .slide-five .test-standart::before {
         transform: scale(1);
-        right: 0;
-        top: 0;
+        top: -400px;
     }
-
-    .slide-five .image-premium::before {
+    
+    .slide-five .test-premium::before {
         transform: scale(1);
-        right: 0;
-        top: -320px;
+        top: -400px;
     }
 
     .ckeckbox-label {
