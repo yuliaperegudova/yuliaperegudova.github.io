@@ -5,7 +5,7 @@ var nextButton = document.querySelector('.button-next');
 var logo = document.querySelector('.main-nav__logo');
 var whiteLogo = document.querySelector('.main-nav__logo-white');
 var pageCounter = 3;
-var link = "https://yuliaperegudova.github.io/redis-test/#";
+var listItems = document.querySelectorAll('.site-list__item');
 
 menuOpen.addEventListener('click', function() {
     menuList.classList.toggle('visually-hidden');
@@ -20,7 +20,7 @@ menuClosed.addEventListener('click', function() {
 nextButton.addEventListener('click', function() {
     var newPage = 0;
     if(pageCounter < 11) { 
-        nextButton.href = link + pageCounter;
+        nextButton.href = "#" + pageCounter;
         newPage = pageCounter + 1;
         pageCounter = newPage;
         console.log(pageCounter)
@@ -37,5 +37,10 @@ nextButton.addEventListener('click', function() {
     }
 });
 
-
+listItems.forEach( function(item) {
+    item.addEventListener('click', function() {
+        menuList.classList.add('visually-hidden');
+        menuOpen.classList.remove('visually-hidden');
+    })
+});
 
