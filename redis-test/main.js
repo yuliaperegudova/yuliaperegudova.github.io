@@ -24,7 +24,7 @@ nextButton.addEventListener('click', function() {
         pageCounter = newPage;
         console.log(pageCounter)
     } else {
-        var pageCounter = 2;
+        nextButton.href = "#10";
     }
 
     if(pageCounter === 8) {
@@ -35,3 +35,6 @@ nextButton.addEventListener('click', function() {
         whiteLogo.classList.add('visually-hidden');
     }
 });
+
+
+
